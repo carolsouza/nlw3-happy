@@ -1,9 +1,18 @@
 import React from 'react';
-import { FiArrowRight } from 'react-icons/fi';
 
 import './styles/global.css';
+import 'leaflet/dist/leaflet.css';
 
 import Routes from './routes';
+
+function App() {
+  return (
+    <Routes />
+  );
+}
+
+export default App;
+
 
 /* funcionamento typescript
 interface TitleProps{
@@ -15,11 +24,3 @@ function Title(props: TitleProps){
     <h1>{props.text}</h1>
   )
 }*/
-
-function App() {
-  return (
-    <Routes />
-  );
-}
-
-export default App;
